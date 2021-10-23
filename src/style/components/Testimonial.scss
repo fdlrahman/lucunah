@@ -1,0 +1,23 @@
+@import "../utils/Color.scss";
+
+.testimonial {
+    background-color: $whiteSection;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    svg {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: $quoteIconColor;
+    }
+    p {
+        font-size: 0.96rem;
+    }
+    .name {
+        margin-top: 2rem;
+        text-align: right;
+        h3 {
+            color: $headingColor;
+        }
+    }
+}

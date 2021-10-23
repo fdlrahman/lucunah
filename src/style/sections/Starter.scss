@@ -1,0 +1,36 @@
+@import "../utils/Color.scss";
+
+.main-container {
+    margin: 0 10%;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .content {
+            margin-top: 3.4rem;
+            margin-right: 3rem;
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                color: $headingColor;
+            }
+            p {
+                font-size: 1.2rem;
+                color: $lightFontColor;
+                line-height: 1.9rem;
+            }
+            .button-container {
+                display: flex;
+                margin-top: 1rem;
+                button {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .image {
+            img {
+                width: 35rem;
+                height: 35rem;
+            }
+        }
+    }
+}

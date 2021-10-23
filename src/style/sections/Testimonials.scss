@@ -1,0 +1,17 @@
+@import "../utils/Color.scss";
+
+.testimonials {
+    background-color: $greySection;
+    padding: 2rem 0;
+    .main-container {
+        .titles {
+            width: 30rem;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+        .content {
+            display: flex;
+        }
+    }
+}

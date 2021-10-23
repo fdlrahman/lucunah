@@ -1,0 +1,46 @@
+@import "../utils/Color.scss";
+
+.services {
+    padding: 2rem 0;
+    .main-container {
+        .titles {
+            margin: auto;
+            width: 30rem;
+            text-align: center;
+        }
+        .content {
+            margin-top: 3rem;
+            display: flex;
+            .video {
+                border-radius: 1rem;
+                width: 32rem;
+                height: 16rem;
+                background-image: url("../../assets/videoImage.jpg");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .play {
+                    width: 5rem;
+                    height: 5rem;
+                    background-color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg {
+                        font-size: 4rem;
+                        color: $yellowColor;
+                    }
+                }
+            }
+
+            .services {
+                width: 30rem;
+                ul {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

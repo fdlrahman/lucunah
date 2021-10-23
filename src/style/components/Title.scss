@@ -1,0 +1,30 @@
+@import "../utils/Color.scss";
+
+.title {
+    margin: 2rem 0;
+    h2 {
+        color: $headingColor;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        margin-bottom: 0.3rem;
+    }
+    div {
+        height: 0.2rem;
+        width: 3rem;
+    }
+}
+
+.center {
+    text-align: center;
+    div {
+        margin: auto;
+    }
+}
+
+.blue {
+    background-color: $headingColor;
+}
+
+.pink {
+    background-color: $pinkColor;
+}

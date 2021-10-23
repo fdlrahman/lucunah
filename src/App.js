@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Starter from "./sections/Starter";
+import About from "./sections/About";
+import Services from "./sections/Services";
+import Testimonials from "./sections/Testimonials";
+import Blogs from "./sections/Blogs";
+import Footer from "./sections/Footer";
+import { motion } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <motion.div initial="hidden" animate="show" className="App">
+            <Starter />
+            <About />
+            <Services />
+            <Testimonials />
+            <Blogs />
+            <Footer />
+            <ScrollToTop />
+        </motion.div>
+    );
 }
 
 export default App;

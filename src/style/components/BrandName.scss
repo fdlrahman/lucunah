@@ -1,0 +1,21 @@
+@import "../utils/color.scss";
+
+.brand {
+    cursor: pointer;
+    border: 0.1rem solid $pinkColor;
+    padding: 0.2rem 1rem;
+    span {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: $blueColor;
+        font-weight: bold;
+    }
+}
+
+.isFooter {
+    width: 6rem;
+    border: 0.1rem solid white;
+    span {
+        color: white;
+    }
+}

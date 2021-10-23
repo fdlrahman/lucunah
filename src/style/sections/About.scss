@@ -1,0 +1,25 @@
+@import "../utils/Color.scss";
+
+.about {
+    background-color: $greySection;
+    padding: 3rem 0;
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        .content {
+            width: 49rem;
+            margin-right: 5rem;
+            p {
+                text-align: justify;
+                margin-bottom: 0.7rem;
+                &:last-of-type {
+                    margin-bottom: 1.7rem;
+                }
+            }
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "../utils/Color.scss";
+
+.scrollToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1;
+    background-color: $headingColor;
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    &:hover {
+        background-color: white;
+        color: $headingColor;
+        cursor: pointer;
+    }
+}
+
+.scrollToTop.notVisible {
+    opacity: 0;
+    cursor: auto;
+}

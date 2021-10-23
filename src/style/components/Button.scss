@@ -1,0 +1,45 @@
+@import "../utils/Color.scss";
+
+button {
+    color: white;
+    text-transform: uppercase;
+    padding: 0.8rem 1rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.25rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+    svg {
+        vertical-align: middle;
+        font-size: 1.5rem;
+        margin-top: -3px;
+    }
+}
+
+.blue {
+    background-color: $blueColor;
+    &:hover {
+        background-color: white;
+        border: 0.1rem solid $blueColor;
+        color: $blueColor;
+    }
+}
+
+.pink {
+    background-color: $pinkColor;
+    &:hover {
+        background-color: white;
+        border: 0.1rem solid $pinkColor;
+        color: $pinkColor;
+    }
+}
+
+.pink.outline {
+    background-color: white;
+    border: 0.1rem solid $pinkColor;
+    color: $pinkColor;
+    &:hover {
+        background-color: $pinkColor;
+        color: white;
+    }
+}

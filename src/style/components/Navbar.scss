@@ -1,0 +1,76 @@
+@import "../utils/Color.scss";
+
+.navbar {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .collapseable-button {
+            display: none;
+        }
+    }
+
+    nav {
+        .links {
+            ul {
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: left;
+                margin: 0.3rem;
+                li {
+                    margin-left: 3rem;
+                    a {
+                        font-size: 1rem;
+                        text-decoration: none;
+                        color: $blueColor;
+                        transition: 0.2s;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: $pinkColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar.active {
+        nav {
+            display: block;
+        }
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        .col {
+            justify-content: left;
+            .collapseable-button {
+                display: inline-block;
+                margin-left: 5rem;
+                font-size: large;
+            }
+        }
+        nav {
+            margin-left: -3rem;
+            display: none;
+            .links {
+                ul {
+                    flex-direction: column;
+                    margin: 0.3rem 0rem;
+                    li {
+                        margin: 2rem 0 0 0;
+                        &:first-of-type {
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
