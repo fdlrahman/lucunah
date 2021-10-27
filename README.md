@@ -1,5 +1,3 @@
-<img src="https://i.pinimg.com/originals/da/3b/4c/da3b4c97239bcccb8a8d8d86e24a2a73.jpg" width="150" style="border-radius: 50%" />
-
 # Lucunah WebApp
 
 > **Note :**
