@@ -1,11 +1,11 @@
 import React from "react";
-import "../style/sections/Services.scss";
-import Title from "../components/Title";
+import "../../style/sections/Services.scss";
+import Title from "../../components/Title";
 import { BsPlayFill } from "react-icons/bs";
-import Service from "../components/Service";
+import Service from "../../components/Service";
 import { motion } from "framer-motion";
-import { useScroll } from "../components/useScroll";
-import { containerTopAnimation, toLeftAnimation, toRightAnimation } from "../Animation";
+import { useScroll } from "../../components/useScroll";
+import { containerTopAnimation, toLeftAnimation, toRightAnimation } from "../../Animation";
 
 function Services() {
     const [element, controls] = useScroll();

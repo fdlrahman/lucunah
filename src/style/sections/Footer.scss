@@ -81,6 +81,10 @@
         color: lightgray;
         p {
             font-size: 0.9rem;
+            a {
+                text-decoration: none;
+                color: lightgray;
+            }
         }
         .social-media {
             display: flex;

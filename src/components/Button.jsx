@@ -1,9 +1,9 @@
 import React from "react";
 import "../style/components/Button.scss";
 
-function Button({ content, icon = "", color = "blue", outline = false }) {
+function Button({ content, icon = "", color = "blue", outline = false, isForm = false }) {
     return (
-        <button className={`${color} ${outline ? "outline" : ""}`}>
+        <button type={isForm ? "submit" : "button"} className={`${color} ${outline ? "outline" : ""}`}>
             {content} {icon}
         </button>
     );

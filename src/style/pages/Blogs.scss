@@ -1,0 +1,14 @@
+@import "../utils/Color.scss";
+
+.blogs__container {
+    display: flex;
+    flex-wrap: wrap;
+    .blog {
+        width: 20rem;
+        margin: 1rem;
+    }
+}
+
+.footer {
+    margin-top: 3rem;
+}

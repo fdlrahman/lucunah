@@ -1,23 +1,29 @@
-import Starter from "./sections/Starter";
-import About from "./sections/About";
-import Services from "./sections/Services";
-import Testimonials from "./sections/Testimonials";
-import Blogs from "./sections/Blogs";
-import Footer from "./sections/Footer";
-import { motion } from "framer-motion";
-import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Creates from "./pages/Creates";
+import PreviewBlog from "./pages/PreviewBlog";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
     return (
-        <motion.div initial="hidden" animate="show" className="App">
-            <Starter />
-            <About />
-            <Services />
-            <Testimonials />
-            <Blogs />
-            <Footer />
-            <ScrollToTop />
-        </motion.div>
+        <Router>
+            <div>
+                <Switch>
+                    <Route path="/" exact>
+                        <Home />
+                    </Route>
+                    <Route path="/blogs" exact>
+                        <Blogs />
+                    </Route>
+                    <Route path="/blogs/:uid">
+                        <PreviewBlog />
+                    </Route>
+                    <Route path="/create">
+                        <Creates />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 }
 

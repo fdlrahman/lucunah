@@ -1,14 +1,14 @@
 import React from "react";
-import "../style/sections/Footer.scss";
-import BrandName from "../components/BrandName";
+import "../../style/sections/Footer.scss";
+import BrandName from "../../components/BrandName";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaRegPaperPlane, FaFacebookF } from "react-icons/fa";
 import { BiPhone } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 import { motion } from "framer-motion";
-import { useScroll } from "../components/useScroll";
-import { toUpAnimation, toDownAnimation } from "../Animation";
+import { useScroll } from "../../components/useScroll";
+import { toUpAnimation, toDownAnimation } from "../../Animation";
 
 const quickLinks = ["About", "Testimonial", "Contact Us", "Portfolio", "Career", "Terms & Condition", "Privacy Policy"];
 const industries = ["Website Development", "Mobil App Development", "Website Design", "Mobile App Design", "Digital Marketing", "Graphic Design", "IOS App Development"];
@@ -82,7 +82,9 @@ function Footer() {
                 </div>
                 <hr />
                 <div className="footer__bottom">
-                    <p>Copyright 2021. All Rights Reserved</p>
+                    <p>
+                        Copyright 2021. All Rights Reserved, Created By <a href="https://github.com/fadhlurrahmanID">fadhlurrahman</a>
+                    </p>
                     <div className="social-media">
                         <div className="square">
                             <FaFacebookF />

@@ -1,0 +1,30 @@
+@import "../utils/Color.scss";
+
+.preview__blog {
+    .titles {
+        width: 70%;
+        margin: auto;
+        p {
+            text-align: center;
+            font-size: 0.9rem;
+            color: grey;
+        }
+    }
+    .image {
+        width: 60%;
+        margin: auto;
+        height: 40rem;
+        background-color: lightgray;
+        margin-top: 2rem;
+        background-size: cover;
+        background-position: center center;
+        filter: grayscale(100%);
+    }
+    .content {
+        margin-top: 2rem;
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

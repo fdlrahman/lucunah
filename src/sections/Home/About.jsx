@@ -1,14 +1,14 @@
 import React from "react";
-import "../style/sections/About.scss";
-import Title from "../components/Title";
-import Button from "../components/Button";
-import Card from "../components/Card";
+import "../../style/sections/About.scss";
+import Title from "../../components/Title";
+import Button from "../../components/Button";
+import Card from "../../components/Card";
 import { HiLightBulb } from "react-icons/hi";
 import { MdDateRange } from "react-icons/md";
 import { BsHeadset, BsFillChatSquareTextFill } from "react-icons/bs";
-import { headerAnimation } from "../Animation";
+import { headerAnimation } from "../../Animation";
 import { motion } from "framer-motion";
-import { useScroll } from "../components/useScroll";
+import { useScroll } from "../../components/useScroll";
 
 function About() {
     const [element, controls] = useScroll();

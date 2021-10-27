@@ -1,4 +1,9 @@
 @import "../utils/Color.scss";
+@import "../utils/Animation.scss";
+
+@mixin animate($animation, $duration, $method, $times) {
+    animation: $animation $duration $method $times;
+}
 
 .main-container {
     margin: 0 10%;
@@ -12,6 +17,24 @@
                 font-size: 3rem;
                 margin-bottom: 1rem;
                 color: $headingColor;
+            }
+            .lul {
+                display: inline-block;
+                position: relative;
+                // font-size: 5rem;
+                @include keyframes(fade) {
+                    0% {
+                        top: -10px;
+                    }
+                    50% {
+                        top: 0;
+                    }
+                    100% {
+                        top: -10px;
+                    }
+                }
+
+                @include animate(fade, 1s, linear, infinite);
             }
             p {
                 font-size: 1.2rem;
@@ -32,5 +55,17 @@
                 height: 35rem;
             }
         }
+    }
+}
+
+@include keyframes(AlwaysLaugh) {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
     }
 }

@@ -1,0 +1,39 @@
+@import "../utils/Color.scss";
+
+.create {
+    width: 70%;
+    margin: auto;
+    form {
+        .form-group {
+            label {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #39393a;
+                font-size: 0.8rem;
+            }
+            input {
+                display: block;
+                width: 100%;
+                padding: 0.5rem;
+                margin-bottom: 2rem;
+                margin-top: 0.5rem;
+                outline: none;
+                border: 0.1rem solid #c5c5c5;
+                font-size: 0.9rem;
+            }
+            .cke_editor_editor1 {
+                margin: 0.5rem 0 2.5rem;
+            }
+            .text-danger {
+                margin-top: -30px;
+                margin-bottom: 2rem;
+                color: red;
+            }
+        }
+    }
+}
+
+.swal-button {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
